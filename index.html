@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bomal De Silva - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/framer-motion/dist/framer-motion.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const elements = document.querySelectorAll("[data-animate]");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("active");
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            elements.forEach(el => observer.observe(el));
+        });
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active'); // Toggle the "active" class to show/hide the menu
+        }
+    </script>
+    <style>
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Bomal <span class="highlight">De Silva</span> </div>
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="about" class="section" data-animate>
+            <h1>Welcome to My Portfolio</h1>
+            <div class="container-about">
+                <div class="left">
+                    <h2>Hi, It's Bomal <span class="highlight1"> De Silva</span></h2>
+                    <h3>I'm a <span class="developer-type"></span></h3>
+                    <p>Hi, I'm Bomal de Silva, a passionate developer skilled in a wide array of technologies. My
+                        expertise lies
+                        in mobile and web development, as well as backend frameworks. I strive to use my skills to
+                        create
+                        impactful solutions and support my family while pursuing higher education.</p>
+
+                    <div class="social-icons">
+                        <a href="https://github.com/bomaldesilva" target="_blank" class="icon-wrapper">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/bomal-de-silva-419a4630b/" target="_blank"
+                            class="icon-wrapper">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/bds_78?igsh=ejRlcGRzdXU3eTlq" target="_blank"
+                            class="icon-wrapper">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/qr/MBRKMWH5HLSKD1" target="_blank" class="icon-wrapper">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="img">
+                        <img src="/assets//images/pp.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <section id="skills" class="section" data-animate>
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <img src="/assets/images/java.png" alt="Java Logo">
+                    <p>Java</p>
+                </div>
+                <div class="skill">
+                    <img src="/assets/images/python.png" alt="Python Logo">
+                    <p>Python</p>
+                </div>
+                <div class="skill">
+                    <img src="/assets/images/html.png" alt="HTML Logo">
+                    <p>HTML</p>
+                </div>
+                <div class="skill">
+                    <img src="/assets/images/css.png" alt="CSS Logo">
+                    <p>CSS</p>
+                </div>
+                <div class="skill">
+                    <img src="/assets/images/javascript.png" alt="JavaScript Logo">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill">
+                    <img src="/assets/images/typescript.png" alt="JavaScript Logo">
+                    <p>TypeScript</p>
+                </div>
+                <div class="skill">
+                    <img src="/assets/images/dart.png" alt="Dart Logo">
+                    <p>Dart</p>
+                </div>
+                <div class="skill">
+                    <img src="/assets/images/postgresql.png" alt="PostgreSQL Logo">
+                    <p>PostgreSQL</p>
+                </div>
+                <div class="skill">
+                    <img src="/assets/images/mysql.png" alt="MySQL Logo">
+                    <p>MySQL</p>
+                </div>
+                <div class="skill">
+                    <img src="/assets/images/git.png" alt="git Logo">
+                    <p>git</p>
+                </div>
+                <div class="skill">
+                    <img src="/assets/images/github.png" alt="git Logo">
+                    <p>github</p>
+                </div>
+                <div class="skill">
+                    <img src="/assets/images/bootstrap.jpeg" alt="Bootstrap Logo">
+                    <p>Bootstrap</p>
+                </div>
+                <div class="skill">
+                    <img src="/assets/images/angular.png" alt="Angular Logo">
+                    <p>Angular</p>
+                </div>
+
+                <div class="skill">
+                    <img src="/assets/images/springboot.png" alt="Spring Boot Logo">
+                    <p>Spring Boot</p>
+                </div>
+                <div class="skill">
+                    <img src="/assets/images/django.png" alt="Django Logo">
+                    <p>Django</p>
+                </div>
+                <div class="skill">
+                    <img src="/assets/images/flutter.png" alt="Flutter Logo">
+                    <p>Flutter</p>
+                </div>
+            </div>
+        </section>
+        <section id="education" class="section" data-animate>
+            <h1>Education</h1>
+            <div class="education">
+
+                <div class="education-section">
+                    <div class="qualification">
+                        <div class="degree-box">
+                            <h3>Bachelor of Science in Information Systems</h3>
+                            <h4>Universtiy of colombo school of computing</h4>
+                            <p class="year">2025 - 2029</p>
+                        </div>
+                        <div class="flow-line"></div>
+                    </div>
+
+                    <div class="qualification">
+                        <div class="degree-box">
+                            <h3>Diploma in software engineering</h3>
+                            <h4>ICET</h4>
+                            <h5>Trainee Full-stack Developer</h5>
+                            <p></p>
+                            <p class="year">2024 - 2025</p>
+                        </div>
+                        <div class="flow-line"></div>
+                    </div>
+
+                    <div class="qualification">
+                        <div class="degree-box">
+                            <h3>Certificates</h3>
+                            <h4>UOM - Open Learning</h4>
+                            <ul>
+                                <li class="list-e">Front-end development-1</li>
+                                <li class="list-e">Front-end development-2</li>
+                                <li class="list-e">Python for beginners</li>
+                                <li class="list-e">Python Programinng</li>
+                            </ul>
+                            <p class="year">2022 - 2024</p>
+                        </div>
+                        <div class="flow-line"></div>
+                    </div>
+
+                    <div class="qualification">
+                        <div class="degree-box">
+                            <h3>High-School</h3>
+                            <h4>Richmond Collage</h4>
+                            <h5>Achived 3A's for al exam</h5>
+                            <p class="year">2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <section id="projects" class="section" data-animate>
+            <h2>My Projects</h2>
+            <!-- <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of the project goes here.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of the project goes here.</p>
+            </div> -->
+            <div class="projects-container">
+                <div class="project-box">
+                    <img src="assets/images/ccm.jpeg" alt="Command connect miltary">
+                    <h3>Command-Connect-Military</h3>
+                    <p>This java application design for communication between Tank,Helicopter,Submarine with MainStation
+                        . I'm using for this project OOP Concepts.</p>
+                </div>
+                <div class="project-box">
+                    <img src="assets/images/theweather.png" alt="The-Weather">
+                    <h3>The-Weather</h3>
+                    <p>This is a web application designed to provide real-time weather information. Users can search for
+                        weather details by city or location and view current conditions, forecasts, and other relevant
+                        data. The application features an intuitive user interface and integrates with a weather API to
+                        fetch up-to-date information.</p>
+                </div>
+                <div class="project-box">
+                    <img src="assets/images/geekslice.png" alt="Geek-Slice">
+                    <h3>Geek-Slice</h3>
+                    <p>The Geek-Slice Restaurant App is a user-friendly and visually appealing mobile application
+                        designed to enhance the customer experience for pizza lovers. Built using Flutter, the app ensures
+                        smooth performance across Android and iOS platforms.</p>
+                </div>
+                
+                <div class="project-box">
+                    <img src="assets/images/realtiemchat.png" alt="Real-Time-Chat-Room">
+                    <h3>Real-Time-Chat-Room</h3>
+                    <p>A real-time chat room application built with Django, enabling seamless communication between
+                        users. This app showcases the integration of WebSocket technology for real-time messaging, along
+                        with Django's robust backend capabilities.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="contact" class="section" data-animate>
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me through the following platforms:</p>
+            <ul class="contact-list">
+                <li><i class="fas fa-envelope"></i> Email: <a
+                        href="mailto:bomaldsilva@gmail.com">bomaldsilva@gmail.com</a></li>
+                <li><i class="fas fa-phone"></i> Phone: +94 764 649 978</li>
+                <li><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/bomaldesilva"
+                        target="_blank">linkedin.com/in/bomaldesilva</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bomal De Silva. All Rights Reserved.</p>
+    </footer>
+    <script src="/assets/js/scripts.js"></script>
+</body>
+
+</html>
